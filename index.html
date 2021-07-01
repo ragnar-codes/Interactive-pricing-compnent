@@ -19,14 +19,14 @@
     <div class="container">
       <div class="top">
         <p>Pageviews</p>
-        <p><strong>$16.00 </strong>/month</p>
+        <p><span id="price-el"></span>/month</p>
       </div>
       <div class="slide-container">
-        <input type="range">
+        <input type="range" id="price" name="price" min="1" max="100" step="1" value="16">
       </div>
       <div class="mid">
         <label>Monthly Billing</label>
-        <label>Yearly Billing 25% discount</label>
+        <label>Yearly Billing <span class="highlight">25% discount</span></label>
       </div>
       <div class="bot">
         <ul>
@@ -40,12 +40,9 @@
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/ragnar-codes">Yessine Agrebi</a>.
     </div>
   </main>
-   
-
-  
-  
+  <script src="script.js"></script>
 </body>
 </html>

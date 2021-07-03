@@ -10,7 +10,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body>
+<body onload="initial()">
   <main>
     <header>
       <h2>Simple, traffic-based pricing</h2>
@@ -18,14 +18,18 @@
     </header>
     <div class="container">
       <div class="top">
-        <p>Pageviews</p>
+        <p id="views"></p>
         <p><span id="price-el"></span>/month</p>
       </div>
       <div class="slide-container">
-        <input type="range" id="price" name="price" min="1" max="100" step="1" value="16">
+        <input type="range" id="price" name="price" min="8" max="36" step="4" value="8">
       </div>
       <div class="mid">
         <label>Monthly Billing</label>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
         <label>Yearly Billing <span class="highlight">25% discount</span></label>
       </div>
       <div class="bot">

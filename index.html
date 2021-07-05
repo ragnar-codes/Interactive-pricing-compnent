@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body onload="initial()">
+<body>
   <main>
     <header>
       <h2>Simple, traffic-based pricing</h2>
@@ -22,12 +19,12 @@
         <p><span id="price-el"></span>/month</p>
       </div>
       <div class="slide-container">
-        <input type="range" id="slide" name="slide" min="8" max="36" step="4" value="8">
+        <input type="range" id="slide" name="slide" min="0" max="100" step="25" value="0">
       </div>
       <div class="mid">
         <label>Monthly Billing</label>
         <label class="switch">
-          <input type="checkbox" checked>
+          <input type="checkbox" id="toggle">
           <span class="slider round"></span>
         </label>
         <label>Yearly Billing <span class="highlight">25% discount</span></label>

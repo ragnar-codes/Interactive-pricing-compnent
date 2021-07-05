@@ -1,15 +1,13 @@
-const slide = document.getElementById('price');
+const slide = document.getElementById('slide');
 const priceEl = document.getElementById('price-el')
 const views = document.getElementById('views');
 function initial(){
-    const value = document.getElementById('price').value;
+    const value = document.getElementById('slide').value;
     priceEl.textContent = value + "$";
     views.textContent = "10K pageviews"
-
 }
-
 slide.addEventListener('input', () => {
-    const slideVal = document.getElementById('price').value;
+    const slideVal = document.getElementById('slide').value;
     priceEl.textContent = slideVal + '$';
     if(priceEl.textContent == '8$'){
         views.textContent = '10K pageviews';
